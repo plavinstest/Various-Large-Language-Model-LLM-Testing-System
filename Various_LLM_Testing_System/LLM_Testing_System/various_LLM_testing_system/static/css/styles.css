@@ -1,0 +1,173 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif; /* Clean and readable font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body fills the viewport */
+    background-color: #F8F9FA;
+}
+
+/* Chat container styling */
+.chat-container {
+    width: 100%;
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 90vh;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+}
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #3a3a3a;
+}
+.chat-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #c1c1c1;
+    box-shadow: 0 40px 80px rgb(0 0 0 / 10%);
+    border: #555;
+    border-radius: 10px;
+} */
+
+/* Header styling */
+.header {
+    padding: 15px;
+    background-color: #c1c1c1; /* Neutral background */
+    
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold; /* Highlight header text */
+}
+
+/* Dropdown for selecting models */
+#models_name {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid #555; /* Solid border for visibility */
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+/* .chat-box {
+    flex: 1;
+    padding: 10px;
+    background-color: #121212;
+    overflow-y: auto;
+    color: #ffffff;
+    font-size: 14px;
+} */
+
+/* Chat input container styling */
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #c1c1c1; /* Match header color */
+    align-items: center;
+    border-top: 1px solid #333; /* Separate from chat box */
+}
+
+/* Styling for chat input box */
+.chat-input {
+    flex: 1; /* Fill available space */
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    color: #161616;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Styling for send button */
+.send-button {
+    background-color: #161616;
+    border: none;
+    color: #ffffff;
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .chat-container {
+        max-width: 100%;
+        height: 100vh;
+    }
+    .header {
+        font-size: 16px;
+    }
+}
+
+
+
+/* User message styling */
+.user-message {
+    background-color: #c1c1c1;/* User message background color */
+    color: #161616; /* Text color */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    align-self: flex-end; /* Align to the left */
+}
+
+/* Bot message styling */
+.bot-message {
+    background-color: #c1c1c1; /* Bot message background color */
+    color: #161616; /* Text color */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    align-self: flex-start; /* Align to the right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat box container styling */
+.chat-box {
+    display: flex;
+    flex-direction: column; /* Ensure messages stack vertically */
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto; /* Allow scrolling for overflow */
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Styling for result button */
+.result-button {
+    background-color: #161616; /* Match the send button color */
+    border: none;
+    color: #ffffff;
+    padding: 8px 12px;
+    margin-left: 10px; /* Space between buttons */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
